@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html> 
+<head>  
+<title>ascholar.com/Apply</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="AScholar, Online Test/Exam, Profile, Class Room, Exam Room, Scholar Progression, Active Score, Scholarships, Admission, Tutorial Papers, Exam Papers, Test">
+<meta name="Description" content="Join AScholar. Learn. Apply for STAS admissions exams, secure funding support. Join reality TV show, The Student, become AScholar education 
+ambassador.">
+<link href="css/form.css" type="text/css"     rel="stylesheet" /> 
+</head> 
+<style>
+div {
+    background-color: lightgrey;
+    width: 35%;
+    padding: 0px;
+    border: 25px sky blue;
+    margin: 25px;
+	float: middle;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=login] {
+    width: 50px;
+    background-color: #33b5e5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	  text-align: center;
+}
+button[type=apply] {
+    background-color: #33b5e5;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+	  
+}
+p[type=submit]{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+/* input[type=text]:hover {
+    background-color:#00CCFF;
+  
+}
+input[type=password]:hover {
+    background-color: #00CCFF;
+}
+input[type=login]:hover {
+    background-color: #33b5e5;
+}
+input[type=register]:hover {
+    background-color: #33b5e5;
+} */
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+</style>
+<body>
+<div>
+<fieldset><img src= 'mugupp.png' width='100' height '30'><img src='SOTAS new.png' width='400' height '100'><hr>
+<form action="action_page.php" method="post" target="_blank" accept-charset="UTF-8"
+enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+  <form action="http://www.example.com/login/" method="post">
+<fieldset>    
+ <legend>Your Details:</legend>  
+  <label>  <span class="error">* <?php echo $fistnameErr;?></span>   First Name :  <input type="text" name="first name" size="30" maxlength="100" required="required">    </label>    <br />
+  <label><span class="error">* <?php echo $emailErr;?></span>Last Name : <input type="text" name="last name" size="30" maxlength="100" required="required">    </label>    <br />   <label> <span class="error">* <?php echo $lastnameErr;?></span>Email:     <input type="email" name="email" size="30" maxlength="100" required="required">    </label>    <br />   </fieldset>  <br />    
+<fieldset>
+  <legend> User Login:  </legend>  
+<form action="http://www.example.com/login/"  method="post">  <label for="username"><span class="error">* <?php echo $usernameErr;?></span>Username:</label> <input type="text" name="username"  required="required" /></title> <br />  
+  <label for="password"><span class="error">* <?php echo $passwordErr;?></span>Password:</label> <input type="password" name="password"  required="required" /> <br> 
+  <label for="password"><span class="error">* <?php echo $passwordErr;?></span>Confirm Password:</label> <input type="password" name="password"  required="required" /></form> </fieldset> 
+<fieldset> 
+<legend>  <span class="error">* <?php echo $passportErr;?></span>Your O'level & Passport: </legend> 
+<form action="http://www.example.com/upload.php" method="post"> 
+<p>Scan and upload your O'level result:</p> 
+<input type="file" name="user-song" required="required"/><br /> 
+<input type="submit" value="Upload" /></form> <br>
+<p>Scan and upload your recent passport. Not more than 500kb:</p> 
+<input type="file" name="user-song" required="required"/><br /> 
+<input type="submit" value="Upload" /></form> </fieldset> <br>
+ <fieldset> 
+ <legend> <span class="error">* <?php echo $genderErr;?></span>Gender: </legend>  
+  Gender: <input id="female" type="radio" name="gender" value="f"> <label for="female">Female</label> 
+<input id="male" type="radio" name="gender"  value="m"> <label for="male">Male</label> </fieldset> <br> 
+<fieldset><legend><span class="error">* <?php echo $dateofbirthErr;?></span>Date of birth:</legend>
+<div class="form-group"><label for="sel1">Date:</label>
+<select class="form-control" id="sel1">
+<option>1</option>    
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+	<option>15</option>
+	<option>16</option>
+	<option>17</option>
+	<option>18</option>
+	<option>19</option>
+	<option>20</option>
+	<option>21</option>
+	<option>22</option>
+	<option>23</option>
+	<option>24</option>
+	<option>25</option>
+	<option>26</option>
+	<option>27</option>
+	<option>28</option>
+	<option>29</option>
+	<option>30</option>
+	<option>31</option>	
+  </select>
+</div>
+<div class="form-group">
+  <label for="sel1">Month:</label>
+  <select class="form-control" id="sel1">
+    <option>January</option>
+    <option>February</option>
+    <option>March</option>
+    <option>April</option>
+	 <option>May</option>
+	 <option>June</option>
+	 <option>July</option>
+	 <option>August</option>
+	 <option>September</option>
+	 <option>October</option>
+	 <option>November</option>
+	 <option>December<option>
+	 </select>
+</div>	 
+<div class="form-group">
+  <label for="sel1">Year:</label>
+  <select class="form-control" id="sel1">
+    <option>1970</option>
+    <option>1971</option>
+    <option>1972</option>
+    <option>1973</option>
+	 <option>1974</option>
+	 <option>1975</option>
+	 <option>1976</option>
+	 <option>1977</option>
+	 <option>1978</option>
+	 <option>1979</option>
+	 <option>1980</option>
+	 <option>1981</option>
+	 <option>1982</option>
+	 <option>1983</option>
+	 <option>1984</option>
+	 <option>1985</option>
+	 <option>1986</option>
+	 <option>1987</option>
+	 <option>1988</option>
+	 <option>1989</option>
+	 <option>1990</option>
+	 <option>1991</option>
+	 <option>1992</option>
+	 <option>1993</option>
+	 <option>1994</option>
+	 <option>1995</option>
+	 <option>1996</option>
+	 <option>1997</option>
+	 <option>1998</option>
+	 <option>1999</option>
+	 <option>2000</option>
+	<option>2001</option>
+	 <option>2002</option>
+	 <option>2003</option>
+	 <option>2004</option>
+	 <option>2005</option>
+	 <option>2006</option>
+	 <option>2007</option>
+	 <option>2008</option>
+	 <option>2009</option>
+	 <option>2010</option>
+	 <option>2011</option>
+	 <option>2012</option>
+	 <option>2013</option>
+	 <option>2014</option>
+	 <option>2015</option>
+	 <option>2016</option>
+	 <option>2017</option>
+	 <option>2018</option>
+	 <option>2019</option>
+	<option>2020</option>
+  </select>
+</div></label> <br/> </fieldset>
+<fieldset> 
+ <legend><span class="error">* <?php echo $subjectareaErr;?></span>Subject Area: </legend> 
+<select name="dropdown"> 
+<option value="Maths" selected>Maths</option> 
+<option value="Physics">Physics</option> 
+<option value="Chemistry">Chemistry</option> 
+<option value="Agricultural Sceince">Agricultural Science</option>
+<option value="	Economics">Economics</option>
+<option value="IRS">IRS</option>
+<option value="Geography">Geography</option>
+<option value="Government">Government</option>
+<option value="CRS">CRS</option>
+<option value="Igbo">Igbo</option>
+<option value="History">History</option>
+<option value="Fine Art">Fine Art</option>
+<option value="Yoruba">Yoruba</option>
+<option value="Hausa">Hausa</option>
+<option value="Further Maths">Further Maths</option>
+<option value="Introductory Technology">Introductory Technology</option>
+<option value="Social Studies">Social Studies</option>
+<option value="Literature">Literature</option>
+<option value="English">English</option>
+<option value="Biology">Biology</option>
+</select> 
+<select name="dropdown"> 
+<option value="Maths" selected>Maths</option> 
+<option value="Physics">Physics</option> 
+<option value="Chemistry">Chemistry</option> 
+<option value="Agricultural Sceince">Agricultural Science</option>
+<option value="	Economics">Economics</option>
+<option value="IRS">IRS</option>
+<option value="Geography">Geography</option>
+<option value="Government">Government</option>
+<option value="CRS">CRS</option>
+<option value="Igbo">Igbo</option>
+<option value="History">History</option>
+<option value="Fine Art">Fine Art</option>
+<option value="Yoruba">Yoruba</option>
+<option value="Hausa">Hausa</option>
+<option value="Further Maths">Further Maths</option>
+<option value="Introductory Technology">Introductory Technology</option>
+<option value="Social Studies">Social Studies</option>
+<option value="Literature">Literature</option>
+<option value="English">English</option>
+<option value="Biology">Biology</option>
+</select><br> 
+<select name="dropdown"> 
+<option value="Maths" selected>Maths</option> 
+<option value="Physics">Physics</option> 
+<option value="Chemistry">Chemistry</option> 
+<option value="Agricultural Sceince">Agricultural Science</option>
+<option value="	Economics">Economics</option>
+<option value="IRS">IRS</option>
+<option value="Geography">Geography</option>
+<option value="Government">Government</option>
+<option value="CRS">CRS</option>
+<option value="Igbo">Igbo</option>
+<option value="History">History</option>
+<option value="Fine Art">Fine Art</option>
+<option value="Yoruba">Yoruba</option>
+<option value="Hausa">Hausa</option>
+<option value="Further Maths">Further Maths</option><option value="Introductory Technology">Introductory Technology</option>
+<option value="Social Studies">Social Studies</option>
+<option value="Literature">Literature</option>
+<option value="English">English</option>
+<option value="Biology">Biology</option>
+</select> 
+<select name="dropdown"> 
+<option value="Maths" selected>Maths</option> 
+<option value="Physics">Physics</option> 
+<option value="Chemistry">Chemistry</option> 
+<option value="Agricultural Sceince">Agricultural Science</option>
+<option value="	Economics">Economics</option>
+<option value="IRS">IRS</option>
+<option value="Geography">Geography</option>
+<option value="Government">Government</option>
+<option value="CRS">CRS</option>
+<option value="Igbo">Igbo</option>
+<option value="History">History</option>
+<option value="Fine Art">Fine Art</option>
+<option value="Yoruba">Yoruba</option>
+<option value="Hausa">Hausa</option>
+<option value="Further Maths">Further Maths</option>
+<option value="Introductory Technology">Introductory Technology</option>
+<option value="Social Studies">Social Studies</option>
+<option value="Literature">Literature</option>
+<option value="English">English</option>
+<option value="Biology">Biology</option>
+</select> </fieldset><br>
+<fieldset>
+<legend>Course:</legend>  
+<select name="dropdown">  
+<option value="Mathematics"selected> Mathematics</option> 
+<option value="Physics">Physics</option> 
+<option value="Linguistics">Linguistics</option>
+<option value="Mass Communication">Mass Communication</option><option value="Civil Engineering">Civil Engineering</option><option value="Computer Engineering">Computer Engineering</option><option value="Marine Engineering">Marine Engineering</option><option value="Petrochemical Engineering">Petrochemical Engineering</option><option value="Mechanical Engineering">Mechanical Engineering</option><option value="Aeronautics">Aeronautics</option><option value="Aeronautic Engineering">Aeroautic Engineering</option><option value="Medicine & Surgery">Medicine & Surgery</option><option value="Phaarmacy">Pharmacy</option><option value="Veterinary Medicine">Veterinary Medicine</option><option value="Biochemistry">Biochemistry</option><option value="Microbiology">Microbiology</option><option value="Biology">Biology</option><option value="Geography">Geography</option><option value="Zoology">Zoology</option><option value="Soil Sceince">Soil Science</option><option value="Agricultural Science">Agricultural Science</option><option value="Economics">Economics</option><option value="Literature in English">Literature in English</option><option value="English Language">English Language</option><option value="Fine & Applied Art">Fine & Applied Art</option><option value="Political Science">Political Science</option><option value="Communication & Language Art">Communication & Language Art</option><option value="Theartre Art">Theatre Art</option><option value="Yoruba">Yoruba</option><option value="German">German</option><option value="French">French</option><option value="Portuguese">Portuguese</option><option value="Guidance & Counseling">Guidance & Counseling </option><option value="Computer Science">Computer Science</option><option value="Nursing">Nursing</option><option value="Dentistry">Dentistry</option><option value="Optometry">Optometry</option><option value="Medical Laboratory">Medical Laboratory</option><option value="Medical Rehabilitation">Medical Rehabilitation</option><option value="Medical Engineering">Medical Engineering</option><option value="Medical Illustration">Medical Illustration</option><option value="Law">Law</option><option value="Hospitality Management">Hospitality Management</option><option value="History">History</option><option value="Religious Studies">Religious Studies</option><option value="Chemistry">Chemistry</option><option value="Petroleum Engineering">Petroleum Engineering</option><option value="Philosophy">Philosophy</option><option value="Psychology">Psychology</option><option value="Forensic Studies">Forensic Studies</option><option value="Accounting/Accountancy">Accounting/Accountancy</option><option value="Public Administration">Public Administration</option><option value="Business Administration">Business Administration</option><option value="International Relations">International Relations</option><option value="Financial Management">Financial Management</option><option value="Marketing">Marketing</option><option value="Library Science">Library Science</option><option value="Criminology">Criminology</option>
+</select> </fieldset> <br> 
+<fieldset> <legend> Your Review:    </legend>    <p>     <label for="hear-about">      How did you hear about us?   </label>     <select name="referrer" id="hear-about">      <option value="google">Google</option>      <option value="friend">Friend</option>      <option value="advert">Advert</option>      <option value="others">Others</option>     </select>    </p>    <p>You understand we will manage your admission service  if successful at the end?     <br />     <label>      <input type="radio" name="rating" value="yes" />      Yes    <span class="error">* <?php echo $yourreviewErr;?></span>   </label>     </p>    <p>     <label for="comments">      Comments:     </label>     <br />     <textarea rows="4" cols="40" id="comments">     </textarea>    </p>    <label>     <input type="checkbox" name="subscribe" checked="checked" />      Sign me up for email updates    </label>    <br />   
+</fieldset>
+
+<?php
+// define variables and set to empty values
+$firstnameErr = $lastnameErr = $emailErr = $usernameErr = $passwordErr = $passportErr = $genderErr = $subjectareaErr = $courseErr = $yourreviewErr = "";
+$yourdetails = $userlogin = $email = $yourpassport = $gender =  $yourreview = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+  }
+
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["email"]);
+  }
+
+  if (empty($_POST["userlogin"])) {
+    $userlogin = "";
+  } else {
+    $userlogin = test_input($_POST["userlogin"]);
+  }
+
+  if (empty($_POST["comment"])) {
+    $comment = "";
+  } else {
+    $comment = test_input($_POST["comment"]);
+  }
+
+  if (empty($_POST["gender"])) {
+    $genderErr = "Gender is required";
+  } else {
+    $gender = test_input($_POST["gender"]);
+  }
+}
+?>
+<a href='download.html'><button type="apply" value="Apply Now"><p type="submit">Apply Now</p></a>
+</form>
+</body>
+</html>

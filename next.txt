@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<title>AScholar/Exam Room</title>
+<head>
+</head>
+<body>
+<button onclick="setTimeout(myFunction, 3000)">Timer</button>
+<script>
+function myFunction() {
+    alert('Hi, dear Applicant, your time is up.');
+}
+</script>
+<p>What is used to describe a noun?</p>
+<input id="what" type="radio" name="is"  value="a"> <label for="noun">A verb</label>
+<input id="what" type="radio" name="is"  value="a"> <label for="noun">A figure of speech</label>
+<input id="what" type="radio" name="is"  value="a"> <label for="noun">An adjective</label>
+<input id="what" type="radio" name="is"  value="a"> <label for="noun">An adverbial clause</label>
+<br>
+<hr>
+<a href='next.html'>  <button type="button" <input type="submit" value="Submit"/>Submit</button> </a>
+<a href="nexto.html">
+</header></table></body>
+
+
+</html>

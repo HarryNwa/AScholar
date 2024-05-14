@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <link href="https://unpkg.com/
+tabulator-tables@4.3.0/dist/css/tabulator.
+min.css" rel="stylesheet">
+        <script type="text/javascript"
+src="https://unpkg.com/tabulatortables@
+4.3.0/dist/js/tabulator.min.js"></script>
+    </head>
+<body>
+
+<div id="example-table"></div>
+     <script>
+             var tableData = [
+             {id:1, name:"A A", age:"24",
+gender:"male", height:1, col:"red"},
+             {id:2, name:"B B", age:"48",
+gender:"female", height:2, col:"blue"},
+             ];
+            var table = new
+Tabulator("#example-table", {
+             data:tableData,
+             columns:[
+             {title:"Name",
+field:"name"},
+             {title:"Age", field:"age"},
+             {title:"Gender",
+field:"gender"},
+             {title:"Height",
+field:"height"},
+             {title:"Favourite Color",
+field:"col"},
+             ],
+         });
+             var table = new
+Tabulator("#example-table", {
+             . . .
+             rowFormatter:function(row){
+                 var data = row.getData();
+                 if(data.col == "blue"){
+                     row.getElement().
+style.backgroundColor = "#A6A6DF";
+                 }
+                 if(data.col == "red"){
+                     row.getElement().
+style.backgroundColor = "#A60000";
+                 }
+             },
+             var tableData = [
+             {id:1, name:”A A”, age:”24”,
+gender:”male”, height:1, col:”red”},
+             {id:2, name:”B B”, age:”48”,
+gender:”female”, height:2, col:”blue”},
+             {id:3, name:”B B”, age:”48”,
+gender:”female”, height:3, col:”white”},
+             {id:4, name:”B B”, age:”48”,
+gender:”female”, height:4, col:”green”},
+             {id:5, name:”B B”, age:”48”,
+gender:”female”, height:5, col:”pink”},
+             {id:6, name:”B B”, age:”48”,
+gender:”female”, height:6, col:”xxx”},
+             ];
+             var table = new Tabulator("#example-table",
+{
+cellClick:function(e, cell){
+
+},
+
+{title:"Name", field:"name",
+cellClick:function(e, cell){
+    //e - the click event object
+    //cell - cell component
+    },
+}
+ var table = new
+Tabulator("#example-table", {
+             cellClick:function(e, cell){
+                 console.log(e);
+                 console.log(cell);
+             },
+			 var table = new Tabulator(“#example-table”,
+ {
+cellClick:function(e, cell){
+    if(cell._cell.value==”A A”){
+alert(“Hello, Mr A. A!”);
+}
+console.log(cell);
+},
+columns:[
+        {title:”Name”, field:”name”},
+        {title:”Age”, field:”age”},
+        {title:”Gender”, field:”gender”},
+        {title:”Height”, field:”height”,
+ formatter:”star”},
+        {title:”Favourite Color”,
+ field:”col”},
+    ],
+	columns:[
+        {title:”Name”, field:”name”},
+        {title:”Age”, field:”age”},
+        {title:”Gender”, field:”gender”},
+        {title:”Height”, field:”height”,
+ formatter:”star”,
+formatterParams:{stars:6}},
+        {title:”Favourite Color”,
+field:”col”},
+    ],
+             var tableData = [
+		   <script>
+             var tableData = [
+             {id:1, name:"A A", age:"24",
+gender:"male", height:1, col:"red"},
+             . . .
+             });
+
+             window.myTable=table;
+
+   
+         function workThis(){
+             window.myTable.
+setFilter("height", ">", 3);
+         }
+   
+              var table = new
+Tabulator(“#example-table”, {
+             data:tableData,
+             columns:[
+                 {title:”Name”,
+field:”name”}
+             ],
+             height:”350px”,
+             layout:”fitColumns”,
+             resizableColumns:false,
+             rowFormatter:function(row){
+                 var element = row.
+getElement(),
+                 data = row.getData(),
+                 width = element.
+offsetWidth,
+                 rowTable, cellContents;
+
+                 while(element.firstChild)
+element.removeChild(element.firstChild);
+                rowTable = document.
+createElement("table")
+                  rowTable.style.width =
+(width - 18) + "px";
+
+                  rowTabletr = document.
+createElement("tr");
+                  cellContents = "<td>" +
+data.id + "</td>";
+
+cellContents += "<td><div><strong>Name:</
+strong> " + data.name + "</div></td>"
+
+                  rowTabletr.innerHTML =
+cellContents;
+
+                  rowTable.
+appendChild(rowTabletr);
+
+                  element.append(rowTable);
+             },
+        });
+        table.setData(tableData);
+		$(“#add-row”).click(function(){
+    table.addRow({});
+});
+
+$(“#del-row”).click(function(){
+    table.deleteRow(1);
+});
+
+$(“#clear”).click(function(){
+    table.clearData()
+});
+
+$(“#reset”).click(function(){
+    table.setData(tabledata);
+});
+</script>
+</body>
+</html>

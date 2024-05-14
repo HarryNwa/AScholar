@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>ascholar.com/</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="AScholar, Online Test/Exam, Profile, Class Room, Exam Room, Scholar Progression, Active Score, Scholarships, Admission, Tutorial Papers, Exam Papers, Test">
+<meta name="Description" content="Join AScholar. Learn. Apply for STAS admissions exams, secure funding support. Join reality TV show, The Student, become AScholar education 
+ambassador.">
+<link href="css/asass.css" type="text/css"     rel="stylesheet" /> 
+<style>
+input[type=search] {
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+header {
+    background-color:#;
+	width:100%;
+    color:white;
+    text-align:left;
+    padding:5px; 
+	border-radius: 0px;
+	margin:0;
+	height: 100px;
+}
+footer {
+    background-color:#889da6;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+    column-count:3;	
+}
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 100%;
+}
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+ }
+
+
+* {
+    box-sizing: border-box;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: #;
+    color: #ffffff;
+    padding: 5px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color :#0000FF;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0000FF;
+}
+.aside {
+    background-color: #0000FF;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+a {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+a:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+header{
+    background-image: url("");
+    background-repeat: repeat-x;
+}
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: #ffffff;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+ul.pagination li a.active {
+    background-color: #eee;
+    color: #ffffff;
+    border: 1px solid #ddd;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: ;}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0000FF;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #0000FF;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+<body bgcolor='white'>
+<div><form>
+  <input type="text" name="search" placeholder="Search AScholar..">
+</form></div>
+<table><tr><td>
+<div class="header">
+<header width='100%' valine='top'><img src='AScholar logo.png' width='600' height='100'>
+<td div class='time' valign='bottom'>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = Date();
+</script></p></td></tr></table>
+<ul>
+<li><a href='home.html' class='topnav-loclicons ascholar-hide-large ascholar-right'onclick='open_menu()' title='Home'>Home</a></li>
+<li><a href='profile.html' class='topnav-loclicons ascholar-hide-large ascholar-right'onclick='open_menu()' title='Profile'>Profile</a></li>
+<li><a href='training.html' class='topnav-loclicons ascholar-hide-large ascholar-right'onclick='open_menu()' title='Teaching Training Course'>Training Course</a></li>
+<li><a href='syllabus.html' class='topnav-loclicons ascholar-hide-large ascholar-right'onclick='open_menu()' title='Syllabus Guide'>Syllabus Guide</a></li>
+<li><a href='classroom.html'  class='topnav-loclicons ascholar-hide-large ascholar-right'onclick='open_menu()' title='Class Room'>Class Room</a></li>
+<li><a href='stas.html' class='topnav-loclicons ascholar-hide-large ascholar-right'onclick='open_menu()' title='STAS Application'>STAS</a></li>
+<li><a href='about.html' class='topnav-loclicons ascholar-hide-large ascholar-right'onclick='open_menu()' title='Know About Us'>About</a></li>
+</ul></header></div>
+<i><strong>"...Of the greatest opportunities to mankind includes that which enables him go to school and be trained to become useful to himself and his country."</i><strong> Harry Nwa</td></table></tr></head>
+</head>
+<hr>
+<div class="row">
+<div class="col-3 col-m-3 menu">
+<a href="paris.jpg">Study in Paris</a>
+<a target="_blank" href="paris.jpg">
+  <img src="paris.jpg" alt="Paris" width="300" height="200">
+</a>
+</div>
+<div class="col-6 col-m-9">
+<h1>AScholar</h1>
+<p>AScholar is an aspiring student community that conducts efficiency tests on applicants, use the result to recommend peak performers to universities 
+around the globe. All candidates are enrolled into 
+Scholars Online Testing & Admissions Systems <acronym title="Scholars Online Testing & Admissions Systems">(SOTAS)</acronym>, the exam portal of 
+AScholar.<br> Successfull candidates have access to AScholar's Funding Support Programmes (FSP). However, AScholar welcomes partnerships with 
+scholarship organizations, government grants, and corporate & private donors from around the world.<br>
+Our Class Room page will, in the future, be open to tutors, teachers and lecturers around the world for sharing video, audio and PDF lectures or classes covering all topics in all 
+subjects or courses. But specifically, all topics MUST align with the curriculum of the tutor's country. Our applicants will be able to see the shared lectures
+in their respective formats on their Academe Social Feeds. Other programmes organised by AScholar Inc. includes a live TV series for students with great academic 
+potentials. These students are selected at the end of each <acronym title="Scholars Testing & Admissions Systems">STAS</acronym> programme.<br>
+At AScholar, we believe that one's interest to go to school qualifies one for it. This is why we work to help those who seek education to find it. 
+It is our biggest passion, however, to give students a reason to be happy with the present and optimistic about their future.</p>
+<hr><h1>EDUCATION IS UP FOR GRABS!</h1>
+<p>We ensure that applicants who turn out successful in our series of online tests and with qualified documents gain admission into a local or 
+international university with tuition funds covered. 
+Our registration fee is affordable and open to students and aspiring students. Click <a href='apply.html'>here </a>to apply. If already applied, 
+you can log in <a href='login.html'>here</a>.
+<p>If you are logging in as a foreign applicant, ensure that you follow the <a href="curriculum.html">Curriculum Guide</a> as our questions are based on each 
+country's curriculum.</P>
+</div>
+<div class="col-3 col-m-12">
+<div class="aside">
+<h2>What We Do?</h2>
+<p>AScholar conducts asdmissions examinations for applicants around the globe.</p>
+<h2>Why We Conduct  Admissions Exams?</h2>
+<p>We want to know how much our applicants know about the courses they want to study at the university or college in order to provide them with 
+necessary admissions service.</p>
+<h2>After That?</h2>
+<p>The best students get automatic enrollment into our admissions support service programmes.</p>
+<h2>Our Funding Support Programmes?</h2>
+<p>We have created a meritorious funding and scholarship platforms as the mechanisms with which we open access to global education for every deserving aspiring 
+student.</p>
+</div><hr>
+</div>
+</div>
+<div class="footer">
+<form>
+    <input type="text" name="search" placeholder="Search AScholar..">
+</form>
+</div>
+</style>
+</head>
+<body bgcolor='#FAEBD7'>
+<footer>
+<form action="http://www.example.com/login/"  method="post">   
+<a href='login.html'>Logout</a></form><a href='about.html'>About Us</a><br><a href="terms.html">Terms of Use</a><br><a href="privacy.html">Privacy Policy</a>
+<br><a href="contact.html">Contact Us</a>
+<h4 width='100%' align='center'><td width='55' valine='top'><img src='AScholar logo.png' width='300' height='50'></td></h4><br>
+Powered by:<br><strong> Harry Nwa Organization.</strong><br>
+Nigeria.
+<hr width='100%' align='center'><a href="#top">Go To Top</a></footer></div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>ascholar.com/login</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="AScholar, Online Test/Exam, Profile, Class Room, Exam Room, Scholar Progression, Active Score, Scholarships, Admission, Tutorial Papers, Exam Papers, Test">
+<meta name="Description" content="Register with AScholar. Take online tests, qualify for the reality TV show phase, The Student, with full tuition funds for local and international universities up for grabs.">
+<link href="css/asass.css" type="text/css"     rel="stylesheet" /> 
+<style>
+div {
+    background-color: lightgrey;
+    width: 400px;
+    padding: 0px;
+    border: 25px sky blue;
+    margin: 25px;
+	float: middle;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=login] {
+    width: 50px;
+    background-color: #33b5e5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	align: center;
+}
+input[type=apply] {
+    width: 70px;
+    background-color: #33b5e5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	align: center;
+}
+input[type=text]:hover {
+    background-color: #;
+}
+input[type=password]:hover {
+    background-color: #;
+}
+input[type=login]:hover {
+    background-color: #33b5e5;
+}
+input[type=register]:hover {
+    background-color: #33b5e5;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+</style>
+<body>
+<div>
+<fieldset><img src='AScholar logo.png' width='400' height '100'><hr>
+<form action="action_page.php" method="post" target="_blank" accept-charset="UTF-8"
+enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+  <form action="http://www.example.com/login/" method="post">
+    <label for="uname">UserName</label>
+    <input type="text" id="uname" name="username">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password"  required="required">
+
+   <a href="home.html"><input type="login" value="LOGIN"/></a>
+  Keep me Logged In<input type="checkbox" name="subscribe" checked="checked" />
+  <br>New Here?
+  <a href="apply.html"><input type="Apply" value="Apply STAS" /></a>
+  </form></fieldset></div>
+</body>
+</head>
+</html>
