@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://unpkg.com/tabulator-tables@4.6.3/dist/css/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.6.3/dist/js/tabulator.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<div id="example-table"></div>
+
+<script>
+    var tableData = [
+        {id: 1, name: "Tomide S. M", school: "Loyola", course: "Software Engineering", score: 98, progress: "green"},
+        {id: 2, name: "Ashley A. N", school: "Greenfield", course: "Nursing", score: 79, progress: "yello"},
+        {id: 3, name: "Eddie C. U", school: "FGC Lagos", course: "Mechanical Engineering", score: 65, progress: "yello"},
+        {id: 4, name: "Chisom K. M", school: "Notre Dame", course: "History", score: 54, progress: "yello"},
+        {id: 5, name: "Daniel A.", school: "Corona", course: "Literature-in-English", score: 49, progress: "red"},
+        {id: 6, name: "Moyin", school: "Chartham House", course: "Polymer Engineering", score: 46, progress: "red"}
+    ];
+
+    var table = new Tabulator("#example-table", {
+        data: tableData,
+        columns: [
+            {title: "Name", field: "name"},
+            {title: "School", field: "school"},
+            {title: "Course", field: "course"},
+            {title: "Score", field: "score"},
+            {title: "Progress", field: "progress"}
+        ],
+        rowFormatter: function (row) {
+            var data = row.getData();
+            if (data.col == "blue") {
+                row.getElement().style.backgroundColor = "#A6A6DF";
+            }
+            if (data.col == "red") {
+                row.getElement().style.backgroundColor = "#A60000";
+            }
+        }
+    });
+
+    $(document).ready(function () {
+        $("#add-row").click(function () {
+            table.addRow({});
+        });
+
+        $("#del-row").click(function () {
+            table.deleteRow(1);
+        });
+
+        $("#clear").click(function () {
+            table.clearData();
+        });
+
+        $("#reset").click(function () {
+            table.setData(tableData);
+        });
+    });
+
+    function workThis() {
+        window.myTable.setFilter("height", ">", 3);
+    }
+</script>
+
+<button id="add-row">Add Row</button>
+<button id="del-row">Delete Row</button>
+<button id="clear">Clear Data</button>
+<button id="reset">Reset Data</button>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en-US">
 <head>
 <title>ascholar.com/stas</title>
@@ -284,4 +284,4 @@ document.getElementById("demo").innerHTML = d.toDateString();
 </tr>
 </table>
 </body>
-</html> 
+</html>  -->
